@@ -19,12 +19,14 @@ public class Product {
         return price;
     }
 
-    private void setPrice(double price) {
+    private boolean setPrice(double price) {
         this.price = price;
+        return true;
     }
 
-    public void changeProductPrice(double newPrice) {
+    public boolean changeProductPrice(double newPrice) {
         setPrice(newPrice);
+        return true;
     }
 
     public int getQuantity() {

@@ -28,5 +28,8 @@ class ProductTest {
     @Test
     void setPrice() {
         Product product = new Product("Garri", 10, 1000);
+        Assert.assertTrue(product.changeProductPrice(1000));
     }
+
+
 }
