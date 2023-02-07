@@ -15,9 +15,9 @@ public class Main {
 
 
         System.out.println("\n********************************\n");
-        Cashier cashier1 = new Cashier("tyye", "yte1", store);
-        Cashier cashier2 = new Cashier("hayy", "yta1", store);
-        System.out.printf("%s is the cashier1 and works at %s.", cashier1.getName(), store.getStoreName());
+        Cashier cashier1 = new Cashier("abc", "1eAZ", store);
+        Cashier cashier2 = new Cashier("def", "yta1", store);
+        System.out.printf("%s is the cashier1 at %s.", cashier1.getName(), store.getStoreName());
 
 
         System.out.println("\n********************************\n");
@@ -32,6 +32,7 @@ public class Main {
         System.out.println("\n********************************\n");
         manager.fireCashier(cashier1);
         System.out.printf("%s has been fired!", cashier1.getName());
+
 
     }
 }
