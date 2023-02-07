@@ -20,6 +20,10 @@ public class Store {
         this.accountBalance = accountBalance;
     }
 
+    public String getStoreName() {
+        return name;
+    }
+
     public Product getProduct(String name) {
         for (Product product : productsStock) {
             if (product.getName().equals(name))
