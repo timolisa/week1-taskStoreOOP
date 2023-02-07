@@ -7,7 +7,7 @@ class PersonTest {
 
     @Test
     @org.junit.jupiter.api.Test
-    void getName() {
+    void shouldGetPersonName() {
         Person person = new Person("Timothy Olisaeloka");
         Assert.assertEquals("Timothy Olisaeloka", person.getName());
     }

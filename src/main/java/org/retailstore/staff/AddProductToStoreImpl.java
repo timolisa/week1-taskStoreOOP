@@ -1,4 +1,9 @@
-package org.retailstore;
+package org.retailstore.staff;
+
+import org.retailstore.Product;
+import org.retailstore.Store;
+import org.retailstore.staff.AddProductToStore;
+import org.retailstore.staff.Manager;
 
 public class AddProductToStoreImpl implements AddProductToStore {
     private Manager manager;

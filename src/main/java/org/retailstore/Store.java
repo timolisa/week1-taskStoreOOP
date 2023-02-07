@@ -1,5 +1,9 @@
 package org.retailstore;
 
+import org.retailstore.staff.AddProductToStoreImpl;
+import org.retailstore.staff.Cashier;
+import org.retailstore.staff.Manager;
+
 import java.util.ArrayList;
 import java.util.List;
 

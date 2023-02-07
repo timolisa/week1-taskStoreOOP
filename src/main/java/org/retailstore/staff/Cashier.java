@@ -1,8 +1,13 @@
-package org.retailstore;
+package org.retailstore.staff;
+
+import org.retailstore.Customer;
+import org.retailstore.Person;
+import org.retailstore.Product;
+import org.retailstore.Store;
 
 import java.util.ArrayList;
 
-public class Cashier extends Person{
+public class Cashier extends Person {
         private String staffID;
         private Store store;
         private int customersAttendedTo = 0;

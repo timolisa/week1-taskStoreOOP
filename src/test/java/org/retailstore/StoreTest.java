@@ -2,6 +2,8 @@ package org.retailstore;
 
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
+import org.retailstore.staff.Cashier;
+import org.retailstore.staff.Manager;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,8 +1,10 @@
-package org.retailstore;
+package org.retailstore.staff;
+
+import org.retailstore.*;
 
 import java.util.List;
 
-public class Manager extends Person{
+public class Manager extends Person {
     private Store store;
 
     public Manager(String name, Store store) {
