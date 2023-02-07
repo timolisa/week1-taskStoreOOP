@@ -1,4 +1,4 @@
-package org.example;
+package org.retailstore;
 
 public class Person {
     private String name;

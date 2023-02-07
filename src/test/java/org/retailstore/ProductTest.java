@@ -1,9 +1,7 @@
-package org.example;
+package org.retailstore;
 
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class ProductTest {
 
@@ -28,7 +26,8 @@ class ProductTest {
     @Test
     void setPrice() {
         Product product = new Product("Garri", 10, 1000);
-        Assert.assertTrue(product.changeProductPrice(1000));
+        product.changePriceOfProduct(1000);
+        Assert.assertTrue(product.getPrice() == 1000);
     }
 
 

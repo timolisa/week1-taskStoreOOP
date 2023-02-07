@@ -1,10 +1,7 @@
-package org.example;
+package org.retailstore;
 
 import org.junit.Assert;
 import org.junit.Test;
-import org.junit.jupiter.api.Assertions;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class PersonTest {
 

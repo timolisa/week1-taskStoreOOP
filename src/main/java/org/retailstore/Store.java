@@ -1,4 +1,4 @@
-package org.example;
+package org.retailstore;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,7 +17,7 @@ public class Store {
     }
 
     public Product getProduct(String name) {
-        for (Product product : productList) {
+        for (Product product : productsStock) {
             if (product.getName().equals(name))
                 return product;
         }
@@ -25,11 +25,11 @@ public class Store {
     }
 
     public List<Product> getProductList() {
-        return productList;
+        return productsStock;
     }
 
     public void setProductList(Product product) {
-        this.productList.add(product);
+        this.productsStock.add(product);
     }
 
     public AddProductToStoreImpl addProductToCatalog(Object other) {
@@ -42,18 +42,18 @@ public class Store {
     }
 
     public double getStoreBalance() {
-        return storeBalance;
+        return accountBalance;
     }
 
     public void setStoreBalance(double storeBalance) {
-        this.storeBalance = storeBalance;
+        this.accountBalance = storeBalance;
     }
 
     public List<Cashier> getCashierList() {
-        return cashierList;
+        return cashiers;
     }
 
     public void setCashierList(Cashier cashier) {
-        this.cashierList.add(cashier);
+        this.cashiers.add(cashier);
     }
 }

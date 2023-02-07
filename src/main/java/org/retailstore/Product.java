@@ -1,4 +1,4 @@
-package org.example;
+package org.retailstore;
 
 public class Product {
     private String name;
@@ -19,14 +19,12 @@ public class Product {
         return price;
     }
 
-    private boolean setPrice(double price) {
+    private void setPrice(double price) {
         this.price = price;
-        return true;
     }
 
-    public boolean changeProductPrice(double newPrice) {
+    public void changePriceOfProduct(double newPrice) {
         setPrice(newPrice);
-        return true;
     }
 
     public int getQuantity() {
