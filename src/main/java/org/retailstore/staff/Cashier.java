@@ -56,7 +56,7 @@ public class Cashier extends Person {
             for (Product item : products)
                 System.out.println(item.toString());
             System.out.println("Total: " + totalPrice);
-            System.out.println("Attended to by: " + getName() + " " + staffID);
+            System.out.println("Attended to by: " + getName() + " " + " STAFF ID: " + staffID);
             customer.getCart().clear();
             customersAttendedTo++;
         }

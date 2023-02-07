@@ -24,24 +24,8 @@ public class Manager extends Person {
         }
     }
 
-    public void increasePrice (double newPrice, Product product) {
-        product.changePriceOfProduct(newPrice);
-    }
-
-    public void evaluateCashier(Cashier cashier) {
-        cashier.getCustomersAttendedTo();
-    }
-
     public void addProductToStore(Product product) {
         AddProductToStoreImpl access = store.addProductToCatalog(this);
         access.addProductToStore(product);
-    }
-
-    public double getBalance() {
-        return store.getStoreBalance();
-    }
-
-    public List<Product> getProductList() {
-        return store.getProductList();
     }
 }

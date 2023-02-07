@@ -16,6 +16,5 @@ public class AddProductToStoreImpl implements AddProductToStore {
     @Override
     public void addProductToStore(Product product) {
         store.setProductList(product);
-        System.out.println("Mr " + manager.getName() + " added " + product.getQuantity() + " units of " + product.getName());
     }
 }
