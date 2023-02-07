@@ -61,8 +61,9 @@ public class Cashier extends Person {
             customersAttendedTo++;
         }
 
-        public void getCustomersAttendedTo() {
+        public int getCustomersAttendedTo() {
             System.out.println(getName() + " attended to " + customersAttendedTo +  " clients.");
+            return this.customersAttendedTo;
         }
 
 }
