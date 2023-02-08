@@ -3,10 +3,19 @@ package org.retailstore;
 import org.junit.Assert;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.retailstore.Customer;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class CustomerTest {
+
+    @Test
+    void shouldCreateACustomer() {
+        Customer customer = new Customer("Jary", 2000);
+        Assert.assertTrue(!customer.getName().equals(null));
+        Assert.assertTrue(customer.getCreditCardBalance() ==2000);
+        Assert.assertFalse(customer.getCart().size() == 1);
+    }
 
     @Test
     void shouldGetCustomerCreditCardBalance() {

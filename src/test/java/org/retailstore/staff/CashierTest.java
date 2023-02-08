@@ -11,6 +11,14 @@ import static org.junit.jupiter.api.Assertions.*;
 class CashierTest {
 
     @Test
+    void shouldCreateCashier() {
+        Store store = new Store("ShopWell", 120000);
+        Cashier cashier = new Cashier("Angela", "2ee1", store);
+        Assert.assertEquals("Angela", cashier.getName());
+        Assert.assertEquals("2ee1", cashier.getStaffID());
+    }
+
+    @Test
     void shouldUpdateProductQuantity() {
         Store store = new Store("ShopWell", 120000);
         Manager manager = new Manager("ABC", store);

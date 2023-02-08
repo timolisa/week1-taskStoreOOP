@@ -23,9 +23,12 @@ public class Manager extends Person {
                 cashiers.remove(c);
         }
     }
-
     public void addProductToStore(Product product) {
         AddProductToStoreImpl access = store.addProductToCatalog(this);
         access.addProductToStore(product);
+    }
+
+    public void updatePriceOfProduct(Product product, double newPrice) {
+        product.changePriceOfProduct(newPrice);
     }
 }

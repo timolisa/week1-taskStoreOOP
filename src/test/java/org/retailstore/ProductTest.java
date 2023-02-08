@@ -2,8 +2,17 @@ package org.retailstore;
 
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
+import org.retailstore.staff.Manager;
 
 class ProductTest {
+    @Test
+    void shouldCreateProduct() {
+        Product product = new Product("Bread", 100.0, 30);
+        Assert.assertTrue(!product.getName().equals(null));
+        Assert.assertTrue(product.getPrice() == 100.0);
+        Assert.assertFalse(product.getQuantity() == 1);
+        Assert.assertTrue(product.getQuantity() == 30);
+    }
 
     @Test
     void shouldGetProductName() {
