@@ -11,15 +11,15 @@ import java.util.List;
 class StoreTest {
 
     @Test
-    void getProduct() {
+    void shouldGetProductFromStore() {
         Product product = new Product("Wine", 1200, 20);
         Store store = new Store("Shoprite", 200000);
         store.setProductList(product);
-        Assert.assertEquals("Wine", store.getProduct(product.getName()));
+        Assert.assertEquals("Wine", store.getProduct(product.getName()).getName());
     }
 
     @Test
-    void getProductList() {
+    void shouldGetProductListFromStore() {
         Product product = new Product("Wine", 1200, 20);
         Product product2 = new Product("Bread", 100, 20);
         Store store = new Store("Shoprite", 200000);
@@ -30,7 +30,7 @@ class StoreTest {
     }
 
     @Test
-    void setProductList() {
+    void shouldSetProductListOfTheStore() {
         List<Product> products = new ArrayList<>();
         Product product = new Product("Fish", 12, 10);
         products.add(product);
@@ -40,13 +40,13 @@ class StoreTest {
     }
 
     @Test
-    void getStoreBalance() {
+    void shouldGetStoreBalance() {
         Store store = new Store("Shoprite", 10000);
         Assert.assertTrue(store.getStoreBalance() == 10000);
     }
 
     @Test
-    void getCashierList() {
+    void shouldGetCashierListContainingCashiersWorkingAtTheStore() {
         Store store = new Store("Shoprite", 10000);
         Cashier cashier = new Cashier("Hannah Berry", "1WEE", store);
         Cashier cashier2 = new Cashier("Hannah Yat", "1WEE", store);
@@ -57,7 +57,7 @@ class StoreTest {
     }
 
     @Test
-    void setCashierList() {
+    void shouldSetCashierList() {
         Store store = new Store("Shoprite", 10000);
         Cashier cashier = new Cashier("Hannah Berry", "1WEE", store);
         Cashier cashier2 = new Cashier("Hannah Yat", "1WEE", store);

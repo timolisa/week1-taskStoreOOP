@@ -12,7 +12,7 @@ public class Customer extends Person {
         this.cart = new ArrayList<>();
     }
     public void makePayment(double amount) {
-        this.creditCardBalance -= amount;
+        creditCardBalance -= amount;
     }
 
     public double getCreditCardBalance() {
